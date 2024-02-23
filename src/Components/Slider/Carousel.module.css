@@ -1,0 +1,36 @@
+.imgHeight {
+  height: 110vh;
+  object-fit: cover;
+}
+.heroHeading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-light--1);
+  width: 70%;
+}
+.heroHeading h1 {
+  text-align: left;
+  font-size: 8rem;
+  font-weight: 600;
+}
+.heroHeading span {
+  display: block;
+}
+.heroHeading p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.heroHeading a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-light--1);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background-color: var(--color-brand--1);
+  border-radius: 5px;
+  margin-top: 40px;
+}

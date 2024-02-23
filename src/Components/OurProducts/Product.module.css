@@ -1,0 +1,62 @@
+.productSection {
+  padding: 50px;
+}
+
+.productSection h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.product {
+  width: 30%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.product:hover {
+  box-shadow: 25px 25px 35px rgba(0, 0, 0, 0.3);
+}
+.product:hover img {
+  transform: scale(1.01);
+}
+.product img {
+  width: 100%;
+  border-radius: 20px;
+}
+.product h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-family: "Heebo", sans-serif;
+}
+.productText {
+  padding: 28px 40px 30px 10px;
+}
+.productText div {
+  position: absolute;
+  top: 72%;
+  right: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0 0 0 / 29%);
+  color: transparent;
+  z-index: 99;
+  font-family: var(--heading-font);
+  font-size: 36px;
+  font-weight: 800;
+}
