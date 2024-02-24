@@ -1,0 +1,33 @@
+.servicesSection {
+  width: 100%;
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.servicesSection h3 {
+  font-size: 1.5rem;
+}
+.servicesSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.service .imgDiv {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.service img {
+  width: 100%;
+}
+.service img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.service h2:hover {
+  color: var(--color-brand--1);
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Product.module.css";
+import Features from "./Features";
 function Product() {
   const productItems = [
     {
@@ -57,6 +58,7 @@ function Product() {
           </div>
         ))}
       </div>
+      <Features />
     </div>
   );
 }

@@ -12,10 +12,7 @@ function PageNav() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/about-us">About</NavLink>
         </li>
         <li>
           <NavLink to="/product">Product</NavLink>
@@ -27,7 +24,7 @@ function PageNav() {
           <NavLink to="/technical-info">Technical Info</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact-us">Contact</NavLink>
         </li>
       </ul>
     </nav>

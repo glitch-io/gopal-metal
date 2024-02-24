@@ -1,0 +1,35 @@
+.who {
+  width: 100%;
+  padding: 50px;
+}
+.who h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.whoSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.item {
+  min-width: 45%;
+  width: 550px;
+  padding: 70px 40px 40px;
+  background-color: var(--color-light--1);
+  border-radius: 6px;
+}
+.item:hover {
+  color: var(--color-light--1);
+  background-color: var(--color-brand--1);
+}
+.item h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.item p {
+  font-size: 1.5rem;
+}

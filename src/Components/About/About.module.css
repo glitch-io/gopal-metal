@@ -1,0 +1,51 @@
+.aboutSection {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 70px 50px;
+  background-color: var(--color-light--1);
+  justify-content: space-between;
+}
+
+.aboutImg {
+  max-width: 48%;
+}
+.aboutImg img {
+  width: 100%;
+  border-radius: 6px;
+}
+.aboutText {
+  max-width: 48%;
+}
+
+.aboutText h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-brand--1);
+  margin-bottom: 30px;
+}
+.aboutText span {
+  display: block;
+}
+
+.aboutText p {
+  font-size: 1.7rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.aboutText a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-light--1);
+  background-color: var(--color-brand--1);
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--color-brand--1);
+}
+
+.aboutText a:hover {
+  background-color: var(--color-light--1);
+  color: var(--color-brand--1);
+}
