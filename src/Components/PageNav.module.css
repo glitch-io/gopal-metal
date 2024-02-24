@@ -20,7 +20,14 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
-
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 /* CSS Modules feature */
 .nav a:global(.active) {
   color: var(--color-brand--1);
@@ -34,4 +41,46 @@ a.ctaLink:visited {
   color: var(--color-dark--0);
   padding: 0.8rem 2rem;
   border-radius: 7px;
+}
+
+.close,
+.menuToggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+    font-size: 3rem;
+    background: transparent;
+    border: none;
+  }
+  .nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--color-light--1);
+    box-shadow: 10px 40px 60px rgba(256, 256, 256, 0.5);
+    padding: 80px 0 0 30px;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .nav .close {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+    display: initial;
+    background-color: transparent;
+    border: none;
+  }
+  .menu.open {
+    right: 0px;
+  }
 }
