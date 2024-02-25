@@ -4,6 +4,8 @@ import SpinnerFullPage from "./Components/SpinnerFullPage";
 import PageNotFound from "./Pages/PageNotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutUs from "./Pages/AboutUs";
+import Quality from "./Pages/Quality";
+import Contact from "./Pages/Contact";
 const Homepage = lazy(() => import("./Pages/HomePage"));
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Routes>
             <Route index element={<Homepage />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/quality" element={<Quality />} />
+            <Route path="/contact-us" element={<Contact />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>
