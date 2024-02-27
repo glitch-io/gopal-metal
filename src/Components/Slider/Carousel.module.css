@@ -34,3 +34,24 @@
   border-radius: 5px;
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .heroHeading h1 {
+    font-size: 6rem;
+  }
+  .heroHeading p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroHeading {
+    width: 90%;
+  }
+  .heroHeading h1 {
+    font-size: 4rem;
+  }
+  .heroHeading p {
+    font-size: 1.7rem;
+  }
+}
