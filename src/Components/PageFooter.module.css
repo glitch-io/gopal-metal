@@ -49,12 +49,20 @@ footer {
   text-align: justify;
   color: var(--color-light--1);
 }
-center {
-}
+
 center a {
   text-decoration: none;
   color: var(--color-brand--1);
 }
 center a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  footer {
+    background-color: var(--color-dark--0);
+    padding: 50px 20px 20px;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }

@@ -42,7 +42,42 @@ a.ctaLink:visited {
   padding: 0.8rem 2rem;
   border-radius: 7px;
 }
+.dropdown {
+  position: relative;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--color-light--1);
+  min-width: 160px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  padding: 0;
+  gap: 0 !important;
+}
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+.dropDown span {
+  color: var(--color-dark--0);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.dropDown span:hover {
+  color: var(--color-brand--1);
+}
+.dropdownContent li {
+  padding: 10px 20px;
+  width: 100%;
+}
 
+.dropdownContent li:hover {
+  background-color: #ddd;
+}
 .close,
 .menuToggle {
   display: none;
@@ -85,5 +120,9 @@ a.ctaLink:visited {
   }
   .menu.open {
     right: 0px;
+  }
+  .dropdownContent {
+    width: 100%;
+    z-index: inherit;
   }
 }

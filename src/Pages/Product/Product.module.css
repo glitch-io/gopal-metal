@@ -1,0 +1,43 @@
+.productSection {
+  display: flex;
+  padding: 70px 50px;
+  justify-content: space-between;
+}
+
+.productContent {
+  width: 66%;
+}
+
+.productImg {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.productImg img {
+  width: 100%;
+}
+.productContent h1 {
+  font-size: 3.5rem;
+  margin: 15px 0 20px 0;
+}
+
+.productContent p {
+  font-size: 1.5rem;
+}
+
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productDetails .contentImg {
+  width: 40%;
+}
+.contentImg img {
+  width: 100%;
+}
+.contentText {
+  width: 55%;
+}

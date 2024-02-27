@@ -28,10 +28,7 @@ function PageFooter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about-us">About</Link>
             </li>
             <li>
               <Link to="/product">Product</Link>
@@ -43,7 +40,7 @@ function PageFooter() {
               <Link to="/technical-info">Technical Info</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact-us">Contact</Link>
             </li>
           </ul>
         </div>

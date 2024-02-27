@@ -1,12 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
 import { useState } from "react";
-import { List, X } from "phosphor-react";
+import { CaretDown, CaretUp, List, X } from "phosphor-react";
 
 function PageNav() {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [showTechnical, setShowTechnical] = useState(false);
+  const toggleTechnical = () => {
+    setShowTechnical(!showTechnical);
+  };
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -21,14 +28,58 @@ function PageNav() {
         <li>
           <NavLink to="/about-us">About</NavLink>
         </li>
-        <li>
-          <NavLink to="/product">Product</NavLink>
+        <li className={styles.dropDown}>
+          <span onClick={toggleDropdown}>
+            Product{" "}
+            {showDropdown ? <CaretUp size={15} /> : <CaretDown size={15} />}
+          </span>
+
+          {showDropdown && (
+            <ul className={styles.dropdownContent}>
+              <li>
+                <Link to="/flanges">Flanges</Link>
+              </li>
+              <li>
+                <Link to="/forged-fittings">Forged Fittings</Link>
+              </li>
+              <li>
+                <Link to="/buttweld-fittings">Buttweld Fittings</Link>
+              </li>
+              <li>
+                <Link to="/pipe">Pipe & Tube</Link>
+              </li>
+              <li>
+                <Link to="/round-bar">Round Bar</Link>
+              </li>
+              <li>
+                <Link to="/sheet">Sheet & Plate</Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <NavLink to="/quality">Quality</NavLink>
         </li>
         <li>
-          <NavLink to="/technical-info">Technical Info</NavLink>
+          <li className={styles.dropDown}>
+            <span onClick={toggleTechnical}>
+              Technical info{" "}
+              {showTechnical ? <CaretUp size={15} /> : <CaretDown size={15} />}
+            </span>
+
+            {showTechnical && (
+              <ul className={styles.dropdownContent}>
+                <li>
+                  <Link to="/chemical-composition">Chemical Composition</Link>
+                </li>
+                <li>
+                  <Link to="/mechanical-composition">
+                    Mechanical Composition
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
         </li>
         <li>
           <NavLink to="/contact-us">Contact</NavLink>

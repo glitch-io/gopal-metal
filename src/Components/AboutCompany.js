@@ -5,7 +5,7 @@ function AboutCompany() {
   return (
     <div className={styles.aboutCompany}>
       <div className={styles.imgDiv}>
-        <img src={path + "/Imgs/about.jpeg"} alt="about" />
+        <img src={path + "/Imgs/main.jpg"} alt="about" />
         <img src={path + "/Imgs/about2.jpg"} alt="about-2" />
         <img src={path + "/Imgs/about3.jpg"} alt="about-3" />
       </div>
