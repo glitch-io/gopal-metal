@@ -8,14 +8,14 @@
 }
 
 .aboutImg {
-  max-width: 48%;
+  width: 48%;
 }
 .aboutImg img {
   width: 100%;
   border-radius: 6px;
 }
 .aboutText {
-  max-width: 48%;
+  width: 48%;
 }
 
 .aboutText h1 {
@@ -48,4 +48,20 @@
 .aboutText a:hover {
   background-color: var(--color-light--1);
   color: var(--color-brand--1);
+}
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .aboutImg,
+  .aboutText {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutSection {
+    padding: 70px 20px;
+  }
 }

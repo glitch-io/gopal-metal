@@ -60,3 +60,12 @@
   font-size: 36px;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 500px) {
+  .productSection {
+    padding: 20px;
+  }
+  .product {
+    width: 100%;
+  }
+}

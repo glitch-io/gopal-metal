@@ -25,3 +25,27 @@
 .experience p {
   font-size: 1.7rem;
 }
+@media (max-width: 1080px) {
+  .experience {
+    padding: 0 150px;
+  }
+}
+@media (max-width: 768px) {
+  .experience {
+    padding: 0 100px;
+  }
+  .experience h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .experience {
+    padding: 0 20px;
+  }
+  .experience h1 {
+    font-size: 2rem;
+  }
+  .experience p {
+    font-size: 1.4rem;
+  }
+}

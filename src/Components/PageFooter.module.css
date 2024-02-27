@@ -58,11 +58,30 @@ center a:hover {
   text-decoration: underline;
 }
 @media (max-width: 768px) {
+  .footer .contact {
+    max-width: 50%;
+  }
+  .footer .about {
+    max-width: 50%;
+  }
+  .quickLinks {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
   footer {
-    background-color: var(--color-dark--0);
-    padding: 50px 20px 20px;
+    padding: 70px 20px 50px;
   }
   .footer {
-    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .contact {
+    max-width: 100%;
+  }
+  .footer .about {
+    max-width: 100%;
+  }
+  .quickLinks {
+    max-width: 100%;
   }
 }

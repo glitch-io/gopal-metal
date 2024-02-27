@@ -8,7 +8,7 @@ function Features() {
       altText: ".jpg",
       title: "About Us",
       subTitle:
-        "Nepco Impex LLP is one of the leading manufacturer ,exporter,supplier and extensive stockholder of piping products for oil, gas,refineries,petrochemical and nuclear industries",
+        "Nepco Impex LLP is one of the leading manufacturer ,exporter,supplier and extensive stockholder of piping products for oil, gas,refineries, petrochemical and nuclear industries",
     },
     {
       id: 2,

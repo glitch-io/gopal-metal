@@ -15,7 +15,7 @@
 }
 
 .item {
-  min-width: 45%;
+  width: 45%;
   width: 550px;
   padding: 70px 40px 40px;
   background-color: var(--color-light--1);
@@ -32,4 +32,9 @@
 }
 .item p {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .who {
+    padding: 50px 20px;
+  }
 }
