@@ -10,3 +10,11 @@
   font-size: 5rem;
   color: var(--color-light--1);
 }
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 20vh;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+}

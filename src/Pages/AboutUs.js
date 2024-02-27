@@ -7,13 +7,15 @@ import Experience from "../Components/Experience";
 import Skills from "../Components/Skills/Skills";
 import Banner from "../Components/Banner";
 import AboutCompany from "../Components/AboutCompany";
+import styles from "./AboutUs.module.css";
+
 function AboutUs() {
   return (
     <>
       <PageNav />
       <Banner title={"About Us"} />
       <AboutCompany />
-      <div style={{ padding: "0 50px " }}>
+      <div className={styles.featuresWrapper}>
         <Features />
       </div>
       <HowWeAre />
