@@ -37,3 +37,14 @@
   font-size: 1.5rem;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  .quickLinks {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quickLinks {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

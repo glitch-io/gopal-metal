@@ -29,3 +29,17 @@
 .qualityData p {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .qualityData {
+    width: 53%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .qualitySection {
+    flex-direction: column;
+    padding: 70px 20px;
+  }
+  .qualityData {
+    width: 100%;
+  }
+}

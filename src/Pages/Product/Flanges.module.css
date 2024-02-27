@@ -24,3 +24,13 @@
 .flangeContent p {
   font-size: 1.7rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .flangesSection {
+    flex-direction: column;
+    padding: 70px 20px;
+  }
+  .flangeContent {
+    width: 100%;
+  }
+}

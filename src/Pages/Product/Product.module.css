@@ -41,3 +41,30 @@
 .contentText {
   width: 55%;
 }
+@media only screen and (max-width: 500px) {
+  .productImg {
+    height: auto;
+  }
+  .productSection {
+    flex-direction: column;
+  }
+  .productSection {
+    padding: 70px 20px;
+  }
+
+  .productContent {
+    width: 100%;
+  }
+  .productDetails {
+    flex-direction: column;
+  }
+  .productDetails .contentImg {
+    width: 100%;
+  }
+  .contentText {
+    width: 100%;
+  }
+  .productContent h1 {
+    margin: 25px 0 10px 0;
+  }
+}
