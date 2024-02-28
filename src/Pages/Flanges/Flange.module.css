@@ -1,0 +1,56 @@
+.flangeSec {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+.contentFlange {
+  width: 66%;
+}
+.flangeText h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.contentFlange p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.contentFlange h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.flangeHead {
+  display: flex;
+}
+.img {
+  width: 40%;
+}
+.img img {
+  width: 100%;
+}
+.flangeText {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .flangeSec {
+    flex-direction: column;
+  }
+  .contentFlange {
+    width: 100%;
+  }
+  .flangeText {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .flangeSec {
+    padding: 70px 20px;
+  }
+  .flangeHead {
+    flex-direction: column;
+  }
+}

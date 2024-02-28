@@ -12,6 +12,7 @@ import ButtweldFittings from "./Pages/Product/ButtweldFittings";
 import Pipe from "./Pages/Product/Pipe";
 import RoundBar from "./Pages/Product/RoundBar";
 import Sheet from "./Pages/Product/Sheet";
+import WeldNeckFlange from "./Pages/Flanges/WeldNeckFlange";
 const Homepage = lazy(() => import("./Pages/HomePage"));
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/pipe" element={<Pipe />} />
             <Route path="/round-bar" element={<RoundBar />} />
             <Route path="/sheet" element={<Sheet />} />
+            <Route path="/weld-neck-flange" element={<WeldNeckFlange />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>
