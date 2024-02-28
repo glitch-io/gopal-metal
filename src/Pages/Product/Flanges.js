@@ -4,6 +4,7 @@ import PageNav from "../../Components/PageNav";
 import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
+import FlangeLink from "../../Components/FlangeLink";
 
 function Flanges() {
   return (
@@ -11,7 +12,7 @@ function Flanges() {
       <PageNav />
       <Banner title={"Flanges"} />
       <div className={styles.flangesSection}>
-        <QuickLinks />
+        <FlangeLink />
         <div className={styles.flangeContent}>
           <div className={styles.flangeImg}>
             <img

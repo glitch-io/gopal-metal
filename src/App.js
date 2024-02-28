@@ -13,6 +13,8 @@ import Pipe from "./Pages/Product/Pipe";
 import RoundBar from "./Pages/Product/RoundBar";
 import Sheet from "./Pages/Product/Sheet";
 import WeldNeckFlange from "./Pages/Flanges/WeldNeckFlange";
+import SlipOnFlange from "./Pages/Flanges/SlipOnFlange";
+import ScrollToTop from "./Components/ScrollToTop";
 const Homepage = lazy(() => import("./Pages/HomePage"));
 function App() {
   return (
@@ -30,9 +32,11 @@ function App() {
             <Route path="/pipe" element={<Pipe />} />
             <Route path="/round-bar" element={<RoundBar />} />
             <Route path="/sheet" element={<Sheet />} />
-            <Route path="/weld-neck-flange" element={<WeldNeckFlange />} />
+            <Route path="/weld-neck-flange" element={<WeldNeckFlange />} />{" "}
+            <Route path="/slip-on-flange" element={<SlipOnFlange />} />
             <Route path="*" element={<PageNotFound />} />
-          </Routes>
+          </Routes>{" "}
+          <ScrollToTop />
         </Suspense>
       </BrowserRouter>
     </>

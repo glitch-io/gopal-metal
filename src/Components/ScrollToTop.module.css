@@ -1,0 +1,18 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+.scrollToTop button {
+  background-color: var(--color-brand--1);
+  color: var(--color-light--1);
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.scrollToTop button:hover {
+  background-color: var(--color-brand--2);
+}
