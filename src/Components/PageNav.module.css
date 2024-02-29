@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: top 0.3s ease background-color 0.3s ease-in-out;
+  transition: top 0.3s ease background-color 0.3 ease;
   animation: slideDown 0.5s ease;
 }
 .nav.fixed {
@@ -23,9 +23,7 @@
     top: 0;
   }
 }
-/* .nav.scrolled {
-  top: -100px; /* Move navbar above the viewport to hide it initially */
-/* } */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -49,7 +47,7 @@
   border: none;
   cursor: pointer;
 }
-/* CSS Modules feature */
+
 .nav a:global(.active) {
   color: var(--color-brand--1);
 }
@@ -87,6 +85,7 @@ a.ctaLink:visited {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .dropDown span:hover {
   color: var(--color-brand--1);
