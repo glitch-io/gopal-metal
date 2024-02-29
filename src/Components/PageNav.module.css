@@ -1,10 +1,19 @@
 .nav {
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 15px 50px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.3s ease-in-out;
+}
 .nav ul {
   list-style: none;
   display: flex;

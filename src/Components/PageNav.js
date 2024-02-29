@@ -1,13 +1,30 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CaretDown, CaretUp, List, X } from "phosphor-react";
 
 function PageNav() {
+  const [isNavFixed, setIsNavFixed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showTechnical, setShowTechnical] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsNavFixed(true);
+      } else {
+        setIsNavFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const toggleTechnical = () => {
     setShowTechnical(!showTechnical);
   };
@@ -18,7 +35,7 @@ function PageNav() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${isNavFixed ? styles.fixed : ""}`}>
       <Logo />
 
       <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
