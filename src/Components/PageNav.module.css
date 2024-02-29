@@ -1,19 +1,31 @@
 .nav {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 50px 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease background-color 0.3s ease-in-out;
+  animation: slideDown 0.5s ease;
 }
+.nav.fixed {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+@keyframes slideDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+/* .nav.scrolled {
+  top: -100px; /* Move navbar above the viewport to hide it initially */
+/* } */
 .nav ul {
   list-style: none;
   display: flex;
