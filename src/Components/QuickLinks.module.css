@@ -15,18 +15,16 @@
   gap: 1.5rem;
   padding-left: 0 !important;
 }
-.quickLinks ul li {
+.quickLinks ul li a {
   padding: 15px 30px;
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
 }
-.quickLinks ul li:hover {
+.quickLinks ul li a:hover {
+  color: var(--color-light--1);
   background-color: var(--color-brand--1);
   box-shadow: 10px 20px 30px rgba(71, 110, 177, 0.5);
-}
-.quickLinks ul li:hover a {
-  color: var(--color-light--1);
 }
 .quickLinks ul li a {
   display: flex;
