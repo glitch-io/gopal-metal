@@ -15,13 +15,12 @@ function UncontrolledExample() {
       {/* Use map function to generate Carousel.Item components */}
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
-          <div className={styles.img}>
-            <img
-              className={`d-block w-100 ${styles.imgHeight}`}
-              src={process.env.PUBLIC_URL + item.imageUrl}
-              alt={item.altText}
-            />
-          </div>
+          <img
+            className={`d-block w-100 ${styles.imgHeight}`}
+            src={process.env.PUBLIC_URL + item.imageUrl}
+            alt={item.altText}
+          />
+
           <div className={styles.heroHeading}>
             <h1>
               Welcome To <span>Nepco Impex LLP</span>

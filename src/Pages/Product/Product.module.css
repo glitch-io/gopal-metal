@@ -41,20 +41,22 @@
 .contentText {
   width: 55%;
 }
-@media only screen and (max-width: 500px) {
-  .productImg {
-    height: auto;
-  }
+@media (max-width: 768px) {
   .productSection {
     flex-direction: column;
   }
+  .productContent {
+    width: 100%;
+  }
+  .productImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
   .productSection {
     padding: 70px 20px;
   }
 
-  .productContent {
-    width: 100%;
-  }
   .productDetails {
     flex-direction: column;
   }

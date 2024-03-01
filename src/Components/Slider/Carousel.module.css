@@ -1,11 +1,11 @@
 .img {
-  height: 100vh;
-  background-color: black;
 }
 .imgHeight {
   width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   background-size: cover;
+  height: 100vh;
+  background-color: black;
 }
 .heroHeading {
   position: absolute;
