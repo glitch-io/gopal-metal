@@ -2,10 +2,9 @@
 }
 .imgHeight {
   width: 100%;
-  object-fit: cover;
   background-size: cover;
+  background-position: center;
   height: 100vh;
-  background-color: black;
 }
 .heroHeading {
   position: absolute;
