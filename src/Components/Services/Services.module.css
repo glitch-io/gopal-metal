@@ -17,6 +17,9 @@
   justify-content: space-between;
   gap: 2rem;
 }
+.service {
+  width: 30%;
+}
 .service .imgDiv {
   overflow: hidden;
   margin-bottom: 10px;
@@ -35,5 +38,8 @@
   .servicesSection {
     width: 100%;
     padding: 70px 20px;
+  }
+  .service {
+    width: 100%;
   }
 }

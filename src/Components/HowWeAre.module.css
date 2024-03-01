@@ -15,8 +15,7 @@
 }
 
 .item {
-  width: 45%;
-  width: 550px;
+  width: 47%;
   padding: 70px 40px 40px;
   background-color: var(--color-light--1);
   border-radius: 6px;
@@ -36,5 +35,8 @@
 @media only screen and (max-width: 500px) {
   .who {
     padding: 50px 20px;
+  }
+  .item {
+    width: 100%;
   }
 }
