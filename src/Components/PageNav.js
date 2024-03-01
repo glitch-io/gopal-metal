@@ -33,38 +33,62 @@ function PageNav() {
 
       <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" onClick={toggleMenu}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about-us">About</NavLink>
+          <NavLink to="/about-us" onClick={toggleMenu}>
+            About
+          </NavLink>
         </li>
         <div className={styles.dropDown}>
           <button className={`${styles.dropBtn}`}>
             Product <CaretDown size={15} />
           </button>
           <div className={styles.dropdownContent}>
-            <Link to="/flanges">Flanges</Link>
-            <Link to="/forged-fittings">Forged Fittings</Link>
-            <Link to="/buttweld-fittings">Buttweld Fittings</Link>
-            <Link to="/pipe">Pipe & Tube</Link>
-            <Link to="/round-bar">Round Bar</Link>
-            <Link to="/sheet">Sheet & Plate</Link>
+            <Link to="/flanges" onClick={toggleMenu}>
+              Flanges
+            </Link>
+            <Link to="/forged-fittings" onClick={toggleMenu}>
+              Forged Fittings
+            </Link>
+            <Link to="/buttweld-fittings" onClick={toggleMenu}>
+              Buttweld Fittings
+            </Link>
+            <Link to="/pipe" onClick={toggleMenu}>
+              Pipe & Tube
+            </Link>
+            <Link to="/round-bar" onClick={toggleMenu}>
+              Round Bar
+            </Link>
+            <Link to="/sheet" onClick={toggleMenu}>
+              Sheet & Plate
+            </Link>
           </div>
         </div>
         <li>
-          <NavLink to="/quality">Quality</NavLink>
+          <NavLink to="/quality" onClick={toggleMenu}>
+            Quality
+          </NavLink>
         </li>
         <div className={styles.dropDown}>
           <button className={styles.dropBtn}>
             Technical info <CaretDown size={15} />
           </button>
           <div className={styles.dropdownContent}>
-            <Link to="/chemical-composition">Chemical Composition</Link>
-            <Link to="/mechanical-composition">Mechanical Composition</Link>
+            <Link to="/chemical-composition" onClick={toggleMenu}>
+              Chemical Composition
+            </Link>
+            <Link to="/mechanical-composition" onClick={toggleMenu}>
+              Mechanical Composition
+            </Link>
           </div>
         </div>
         <li>
-          <NavLink to="/contact-us">Contact</NavLink>
+          <NavLink to="/contact-us" onClick={toggleMenu}>
+            Contact
+          </NavLink>
         </li>
         <button className={`${styles.close}  `} onClick={toggleMenu}>
           <X />
