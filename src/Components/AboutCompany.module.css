@@ -40,4 +40,10 @@
   .aboutCompany {
     padding: 50px 20px;
   }
+  .imgDiv {
+    width: 100%;
+  }
+  .textDiv {
+    width: 100%;
+  }
 }
