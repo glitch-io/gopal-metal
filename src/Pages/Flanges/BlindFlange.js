@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./Flange.module.css";
-import PageNav from "../../Components/PageNav";
 import Banner from "../../Components/Banner";
 import FlangeLink from "../../Components/FlangeLink";
-import PageFooter from "../../Components/PageFooter";
+
 function BlindFlange() {
   return (
     <>
-      <PageNav />
       <Banner title={"Blind Flange"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -116,7 +114,6 @@ function BlindFlange() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Product.module.css";
@@ -8,7 +6,6 @@ import Test from "./Test";
 function RoundBar() {
   return (
     <>
-      <PageNav />
       <Banner title={"Round Bar"} />
       <div className={styles.productSection}>
         <QuickLinks />
@@ -182,7 +179,6 @@ function RoundBar() {
           <Test />
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

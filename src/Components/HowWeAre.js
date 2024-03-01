@@ -24,7 +24,7 @@ function HowWeAre() {
       <h1>Who We Are</h1>
       <div className={styles.whoSection}>
         {data.map((item) => (
-          <div className={styles.item}>
+          <div className={styles.item} data-aos="fade-up" key={item.title}>
             <h3>{item.title}</h3>
             <p>{item.text}</p>
           </div>

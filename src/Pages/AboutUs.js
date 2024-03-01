@@ -1,6 +1,4 @@
 import React from "react";
-import PageNav from "../Components/PageNav";
-import PageFooter from "../Components/PageFooter";
 import HowWeAre from "../Components/HowWeAre";
 import Features from "../Components/OurProducts/Features";
 import Experience from "../Components/Experience";
@@ -12,7 +10,6 @@ import styles from "./AboutUs.module.css";
 function AboutUs() {
   return (
     <>
-      <PageNav />
       <Banner title={"About Us"} />
       <AboutCompany />
       <div className={styles.featuresWrapper}>
@@ -21,7 +18,6 @@ function AboutUs() {
       <HowWeAre />
       <Experience />
       <Skills />
-      <PageFooter />
     </>
   );
 }

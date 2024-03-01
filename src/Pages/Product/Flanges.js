@@ -1,15 +1,11 @@
 import React from "react";
 import styles from "./Flanges.module.css";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
-import QuickLinks from "../../Components/QuickLinks";
 import FlangeLink from "../../Components/FlangeLink";
 
 function Flanges() {
   return (
     <>
-      <PageNav />
       <Banner title={"Flanges"} />
       <div className={styles.flangesSection}>
         <FlangeLink />
@@ -100,7 +96,6 @@ function Flanges() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

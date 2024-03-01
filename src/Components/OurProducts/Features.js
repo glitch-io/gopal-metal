@@ -30,7 +30,7 @@ function Features() {
   return (
     <div className={styles.featureSection}>
       {featuresItem.map((item, index) => (
-        <div className={styles.featuresItem}>
+        <div className={styles.featuresItem} data-aos="fade-in-up" key={index}>
           <div className={styles.imgDiv}>
             <img
               src={process.env.PUBLIC_URL + item.imageUrl}

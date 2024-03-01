@@ -46,7 +46,7 @@ function Product() {
       <h1>Our Products</h1>
       <div className={styles.products}>
         {productItems.map((item, index) => (
-          <div key={index} className={styles.product}>
+          <div key={index} className={styles.product} data-aos="fade-up">
             <img
               src={process.env.PUBLIC_URL + item.imageUrl}
               alt={item.altText}

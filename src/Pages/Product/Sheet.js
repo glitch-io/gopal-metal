@@ -1,6 +1,4 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Product.module.css";
@@ -8,7 +6,6 @@ import Test from "./Test";
 function Sheet() {
   return (
     <>
-      <PageNav />
       <Banner title={"Sheet & Plate"} />
       <div className={styles.productSection}>
         <QuickLinks />
@@ -168,7 +165,6 @@ function Sheet() {
           <Test />
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

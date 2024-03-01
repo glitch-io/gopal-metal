@@ -5,7 +5,7 @@ import { ArrowRight } from "phosphor-react";
 function About() {
   return (
     <div className={styles.aboutSection}>
-      <div className={styles.aboutImg}>
+      <div className={styles.aboutImg} data-aos="fade-right">
         <img src={process.env.PUBLIC_URL + "/Imgs/About.jpeg"} alt="about" />
       </div>
       <div className={styles.aboutText}>

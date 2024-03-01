@@ -1,13 +1,11 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
 import Banner from "../../Components/Banner";
 import styles from "./Flange.module.css";
 import FlangeLink from "../../Components/FlangeLink";
-import PageFooter from "../../Components/PageFooter";
+
 function PlateFlange() {
   return (
     <>
-      <PageNav />
       <Banner title={"Plate Flange"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -114,7 +112,6 @@ function PlateFlange() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

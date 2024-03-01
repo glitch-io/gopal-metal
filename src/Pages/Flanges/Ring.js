@@ -1,13 +1,10 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
 import Banner from "../../Components/Banner";
 import styles from "./Flange.module.css";
 import FlangeLink from "../../Components/FlangeLink";
-import PageFooter from "../../Components/PageFooter";
 function Ring() {
   return (
     <>
-      <PageNav />
       <Banner title={"Ring Type Joint Flange"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -120,7 +117,6 @@ function Ring() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

@@ -1,13 +1,10 @@
 import React from "react";
-import PageNav from "../Components/PageNav";
-import PageFooter from "../Components/PageFooter";
 import Banner from "../Components/Banner";
 import QuickLinks from "../Components/QuickLinks";
 import styles from "./Quality.module.css";
 function Quality() {
   return (
     <>
-      <PageNav />
       <Banner title={"Quality"} />
       <div className={styles.qualitySection}>
         <QuickLinks />
@@ -112,7 +109,6 @@ function Quality() {
           </div>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

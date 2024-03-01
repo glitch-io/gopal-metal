@@ -1,13 +1,10 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import FlangeLink from "../../Components/FlangeLink";
 import styles from "./Flange.module.css";
 function WeldNeckFlange() {
   return (
     <>
-      <PageNav />
       <Banner title={"Weld Neck Flange"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -127,7 +124,6 @@ function WeldNeckFlange() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

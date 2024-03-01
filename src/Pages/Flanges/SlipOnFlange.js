@@ -1,13 +1,10 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import styles from "./Flange.module.css";
 import FlangeLink from "../../Components/FlangeLink";
 function SlipOnFlange() {
   return (
     <>
-      <PageNav />
       <Banner title={"Slip-On Flange"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -112,7 +109,6 @@ function SlipOnFlange() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

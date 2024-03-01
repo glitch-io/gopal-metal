@@ -1,6 +1,4 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Product.module.css";
@@ -8,7 +6,6 @@ import Test from "./Test";
 function ButtweldFittings() {
   return (
     <>
-      <PageNav />
       <Banner title={"Buttweld Fittings"} />
       <div className={styles.productSection}>
         <QuickLinks />
@@ -183,7 +180,6 @@ function ButtweldFittings() {
           <Test />
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

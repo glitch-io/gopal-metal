@@ -1,14 +1,167 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Technical.module.css";
 import { Table } from "react-bootstrap";
+
+const mechanicalData = [
+  {
+    grade: "301",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "304",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 201,
+    hardnessRb: 92,
+  },
+  {
+    grade: "304L",
+    tensileStrength: 485,
+    yieldStrength: 170,
+    elongation: 40,
+    hardnessBHN: 201,
+    hardnessRb: 92,
+  },
+  {
+    grade: "310S",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "316",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "316L",
+    tensileStrength: 485,
+    yieldStrength: 170,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "317",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 35,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "317L",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "321",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "347",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 201,
+    hardnessRb: 92,
+  },
+  {
+    grade: "409",
+    tensileStrength: 380,
+    yieldStrength: 170,
+    elongation: 20,
+    hardnessBHN: 179,
+    hardnessRb: 88,
+  },
+  {
+    grade: "409M",
+    tensileStrength: 430,
+    yieldStrength: 275,
+    elongation: 20,
+    hardnessBHN: 187,
+    hardnessRb: 90,
+  },
+  {
+    grade: "410S",
+    tensileStrength: 415,
+    yieldStrength: 205,
+    elongation: 22,
+    hardnessBHN: 183,
+    hardnessRb: 89,
+  },
+  {
+    grade: "410",
+    tensileStrength: 450,
+    yieldStrength: 205,
+    elongation: 20,
+    hardnessBHN: 217,
+    hardnessRb: 89,
+  },
+  {
+    grade: "420",
+    tensileStrength: 700,
+    yieldStrength: null,
+    elongation: 15,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "430",
+    tensileStrength: 450,
+    yieldStrength: 205,
+    elongation: 22,
+    hardnessBHN: 183,
+    hardnessRb: 89,
+  },
+  {
+    grade: "JSL AUS",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "JS- 203",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+  {
+    grade: "301M",
+    tensileStrength: 515,
+    yieldStrength: 205,
+    elongation: 40,
+    hardnessBHN: 217,
+    hardnessRb: 95,
+  },
+];
+
 function Mechanical() {
   return (
     <>
-      <PageNav />
       <Banner title={"Mechanical Composition"} />
       <div className={styles.technicalContent}>
         <QuickLinks />
@@ -18,176 +171,30 @@ function Mechanical() {
               <tr>
                 <th colSpan={6}>MECHANICAL COMPOSITION</th>
               </tr>
+              <tr>
+                <th>Grade</th>
+                <th>Tensile Strength Mpa, (Min)</th>
+                <th>Yield Strength Mpa, (Min)</th>
+                <th>%Age Elongation in 50mm gauge length min</th>
+                <th>Hardness (Max) BHN</th>
+                <th>Hardness (Max) Rb</th>
+              </tr>
             </thead>
             <tbody>
-              <tr>
-                <td rowSpan={2}>Grade</td>
-                <td rowSpan={2}>Tensile Strength Mpa, (Min)</td>
-                <td rowSpan={2}>Yield StrengthÂ Mpa, (Min)</td>
-                <td rowSpan={2}>%Age Elongation in 50mm gauge length min</td>
-                <td colSpan={2}>Hardness (Max)</td>
-              </tr>
-              <tr>
-                <td>BHN</td>
-                <td>Rb</td>
-              </tr>
-              <tr>
-                <td>301</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>304</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>201</td>
-                <td>92</td>
-              </tr>
-              <tr>
-                <td>304L</td>
-                <td>485</td>
-                <td>170</td>
-                <td>40</td>
-                <td>201</td>
-                <td>92</td>
-              </tr>
-              <tr>
-                <td>310S</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>316</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>316L</td>
-                <td>485</td>
-                <td>170</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>317</td>
-                <td>515</td>
-                <td>205</td>
-                <td>35</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>317L</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>321</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>347</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>201</td>
-                <td>92</td>
-              </tr>
-              <tr>
-                <td>409</td>
-                <td>380</td>
-                <td>170</td>
-                <td>20</td>
-                <td>179</td>
-                <td>88</td>
-              </tr>
-              <tr>
-                <td>409M</td>
-                <td>430</td>
-                <td>275</td>
-                <td>20</td>
-                <td>187</td>
-                <td>90</td>
-              </tr>
-              <tr>
-                <td>410S</td>
-                <td>415</td>
-                <td>205</td>
-                <td>22</td>
-                <td>183</td>
-                <td>89</td>
-              </tr>
-              <tr>
-                <td>410</td>
-                <td>450</td>
-                <td>205</td>
-                <td>20</td>
-                <td>217</td>
-                <td>89</td>
-              </tr>
-              <tr>
-                <td>420</td>
-                <td>700 (max)</td>
-                <td>-</td>
-                <td>15</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>430</td>
-                <td>450</td>
-                <td>205</td>
-                <td>22</td>
-                <td>183</td>
-                <td>89</td>
-              </tr>
-              <tr>
-                <td>JSL AUS</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>JS- 203</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
-              <tr>
-                <td>301M</td>
-                <td>515</td>
-                <td>205</td>
-                <td>40</td>
-                <td>217</td>
-                <td>95</td>
-              </tr>
+              {mechanicalData.map((data, index) => (
+                <tr key={index}>
+                  <td>{data.grade}</td>
+                  <td>{data.tensileStrength}</td>
+                  <td>{data.yieldStrength}</td>
+                  <td>{data.elongation}</td>
+                  <td>{data.hardnessBHN}</td>
+                  <td>{data.hardnessRb}</td>
+                </tr>
+              ))}
             </tbody>
           </Table>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }

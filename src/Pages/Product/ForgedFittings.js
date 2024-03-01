@@ -1,6 +1,4 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
-import PageFooter from "../../Components/PageFooter";
 import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Product.module.css";
@@ -9,7 +7,6 @@ import Test from "./Test";
 function ForgedFittings() {
   return (
     <>
-      <PageNav />
       <Banner title={"Forged And Fittings"} />
       <div className={styles.productSection}>
         <QuickLinks />
@@ -154,8 +151,6 @@ function ForgedFittings() {
           <Test />
         </div>
       </div>
-
-      <PageFooter />
     </>
   );
 }

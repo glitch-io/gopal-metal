@@ -1,13 +1,10 @@
 import React from "react";
-import PageNav from "../../Components/PageNav";
 import Banner from "../../Components/Banner";
 import styles from "./Flange.module.css";
 import FlangeLink from "../../Components/FlangeLink";
-import PageFooter from "../../Components/PageFooter";
 function TongueGroove() {
   return (
     <>
-      <PageNav />
       <Banner title={"Tongue & Groove"} />
       <div className={styles.flangeSec}>
         <FlangeLink />
@@ -123,7 +120,6 @@ function TongueGroove() {
           </p>
         </div>
       </div>
-      <PageFooter />
     </>
   );
 }
