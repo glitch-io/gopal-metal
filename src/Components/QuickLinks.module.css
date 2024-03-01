@@ -35,6 +35,10 @@
   font-size: 1.5rem;
   text-decoration: none;
 }
+.quickLinks ul li a.active {
+  background-color: var(--color-brand--1);
+  color: var(--color-light--1);
+}
 @media only screen and (max-width: 768px) {
   .quickLinks {
     width: 100%;

@@ -1,15 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./Carousel.module.css";
 import { Link } from "react-router-dom";
-
-function UncontrolledExample() {
+import { carouselItems } from "../../data";
+function Slider() {
   // Define an array of carousel items
-  const carouselItems = [
-    { imageUrl: "/Imgs/img1.jpg", altText: "img1.jpg" },
-    { imageUrl: "/Imgs/img2.jpg", altText: "img2.jpg" },
-    { imageUrl: "/Imgs/img3.jpg", altText: "img3.jpg" },
-  ];
-
   return (
     <Carousel>
       {/* Use map function to generate Carousel.Item components */}
@@ -34,4 +28,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default Slider;

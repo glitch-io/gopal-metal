@@ -1,23 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./QuickLinks.module.css";
 import { CaretCircleRight } from "phosphor-react";
+import { quickLinksData } from "../data";
 function QuickLinks() {
-  const QuickLinksData = [
-    { link: "/flanges", name: "Flanges" },
-    { link: "/forged-fittings", name: "Forged Fittings" },
-    { link: "/buttweld-fittings", name: "Buttweld Fittings" },
-    { link: "/pipe", name: "Pipe & Tube" },
-    { link: "/round-bar", name: "Round Bar" },
-    { link: "/sheet", name: "Sheet & Plate" },
-  ];
+  const location = useLocation();
+
   return (
     <div className={styles.quickLinks}>
       <h2>Products</h2>
       <ul>
-        {QuickLinksData.map((data) => (
+        {quickLinksData.map((data) => (
           <li key={data.name}>
-            <Link to={data.link}>
+            <Link
+              to={data.link}
+              className={location.pathname === data.link ? styles.active : ""}
+            >
               <CaretCircleRight size={20} />
               <span>{data.name}</span>
             </Link>

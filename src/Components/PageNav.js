@@ -2,13 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
-import { CaretDown, CaretUp, List, X } from "phosphor-react";
+import { CaretDown, List, X } from "phosphor-react";
 
 function PageNav() {
   const [isNavFixed, setIsNavFixed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [showTechnical, setShowTechnical] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,12 +23,7 @@ function PageNav() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const toggleTechnical = () => {
-    setShowTechnical(!showTechnical);
-  };
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -45,59 +38,31 @@ function PageNav() {
         <li>
           <NavLink to="/about-us">About</NavLink>
         </li>
-        <li className={styles.dropDown}>
-          <span onClick={toggleDropdown}>
-            Product{" "}
-            {showDropdown ? <CaretUp size={15} /> : <CaretDown size={15} />}
-          </span>
-
-          {showDropdown && (
-            <ul className={styles.dropdownContent}>
-              <li>
-                <Link to="/flanges">Flanges</Link>
-              </li>
-              <li>
-                <Link to="/forged-fittings">Forged Fittings</Link>
-              </li>
-              <li>
-                <Link to="/buttweld-fittings">Buttweld Fittings</Link>
-              </li>
-              <li>
-                <Link to="/pipe">Pipe & Tube</Link>
-              </li>
-              <li>
-                <Link to="/round-bar">Round Bar</Link>
-              </li>
-              <li>
-                <Link to="/sheet">Sheet & Plate</Link>
-              </li>
-            </ul>
-          )}
-        </li>
+        <div className={styles.dropDown}>
+          <button className={`${styles.dropBtn}`}>
+            Product <CaretDown size={15} />
+          </button>
+          <div className={styles.dropdownContent}>
+            <Link to="/flanges">Flanges</Link>
+            <Link to="/forged-fittings">Forged Fittings</Link>
+            <Link to="/buttweld-fittings">Buttweld Fittings</Link>
+            <Link to="/pipe">Pipe & Tube</Link>
+            <Link to="/round-bar">Round Bar</Link>
+            <Link to="/sheet">Sheet & Plate</Link>
+          </div>
+        </div>
         <li>
           <NavLink to="/quality">Quality</NavLink>
         </li>
-        <li>
-          <li className={styles.dropDown}>
-            <span onClick={toggleTechnical}>
-              Technical info{" "}
-              {showTechnical ? <CaretUp size={15} /> : <CaretDown size={15} />}
-            </span>
-
-            {showTechnical && (
-              <ul className={styles.dropdownContent}>
-                <li>
-                  <Link to="/chemical-composition">Chemical Composition</Link>
-                </li>
-                <li>
-                  <Link to="/mechanical-composition">
-                    Mechanical Composition
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </li>
-        </li>
+        <div className={styles.dropDown}>
+          <button className={styles.dropBtn}>
+            Technical info <CaretDown size={15} />
+          </button>
+          <div className={styles.dropdownContent}>
+            <Link to="/chemical-composition">Chemical Composition</Link>
+            <Link to="/mechanical-composition">Mechanical Composition</Link>
+          </div>
+        </div>
         <li>
           <NavLink to="/contact-us">Contact</NavLink>
         </li>

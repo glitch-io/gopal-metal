@@ -6,13 +6,10 @@
 :root {
   --color-brand--1: #476eb1;
   --color-brand--2: #285880;
-
   --color-dark--0: #242a2e;
   --color-dark--1: #2d3439;
   --color-dark--2: #42484d;
   --color-light--1: #f2f2f2;
-  --color-light--2: #ececec;
-  --color-light--3: #d6dee0;
 }
 
 * {
@@ -34,28 +31,6 @@ body {
   scroll-behavior: smooth;
 }
 
-label {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.8rem 1.2rem;
-  font-family: inherit;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--color-light--3);
-  transition: all 0.2s;
-}
-
-input:focus {
-  outline: none;
-  background-color: #fff;
-}
-
 .cta:link,
 .cta:visited {
   display: inline-block;
@@ -68,12 +43,3 @@ input:focus {
   padding: 1rem 3rem;
   border-radius: 5px;
 }
-
-/*
-"importCSSModule": {
-    "prefix": "csm",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
-    "description": "Import CSS Module as `styles`"
-  },
-*/

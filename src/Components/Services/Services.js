@@ -1,15 +1,7 @@
-import styles from "./Services.module.css";
 import React from "react";
-
+import styles from "./Services.module.css";
+import { servicesData } from "../../data";
 function Services() {
-  const servicesData = [
-    { title: "Aerospace Industry", imageUrl: "ServiceImg/service1.jpg" },
-    { title: "Chemical Industry", imageUrl: "ServiceImg/service2.jpg" },
-    { title: "Oil & Gas", imageUrl: "ServiceImg/service3.jpg" },
-    { title: "Power Plant", imageUrl: "ServiceImg/service4.jpg" },
-    { title: "Cement Industry", imageUrl: "ServiceImg/service5.jpg" },
-    { title: "Marine Industry", imageUrl: "ServiceImg/service6.jpg" },
-  ];
   return (
     <div className={styles.servicesSection}>
       <h3>OUR SERVICES</h3>
