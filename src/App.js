@@ -23,6 +23,7 @@ import TongueGroove from "./Pages/Flanges/TongueGroove";
 import Ring from "./Pages/Flanges/Ring";
 import Orifice from "./Pages/Flanges/Orifice";
 import Threaded from "./Pages/Flanges/Threaded";
+import Chemical from "./Pages/Technical/Chemical";
 const Homepage = lazy(() => import("./Pages/HomePage"));
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/ring-type-joint-flanges" element={<Ring />} />
             <Route path="/orifice-flanges" element={<Orifice />} />{" "}
             <Route path="/threaded-flanges" element={<Threaded />} />
+            <Route path="/chemical-composition" element={<Chemical />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>{" "}
           <ScrollToTop />

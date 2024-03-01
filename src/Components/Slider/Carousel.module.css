@@ -4,7 +4,8 @@
 }
 .imgHeight {
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  background-size: cover;
 }
 .heroHeading {
   position: absolute;
