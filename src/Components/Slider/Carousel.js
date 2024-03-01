@@ -9,6 +9,18 @@ function Slider() {
       {/* Use map function to generate Carousel.Item components */}
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
+          <div
+            style={{
+              position: "absolute",
+              width: "100%",
+              background: "rgba(0, 0, 0, 0.4)",
+              height: "100%",
+              top: "0",
+              bottom: "0",
+              left: "0",
+              right: "0",
+            }}
+          ></div>
           <img
             className={`d-block w-100 ${styles.imgHeight}`}
             src={process.env.PUBLIC_URL + item.imageUrl}
