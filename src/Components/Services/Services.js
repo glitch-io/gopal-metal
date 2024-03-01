@@ -8,7 +8,7 @@ function Services() {
       <h1>Industries We Serve</h1>
       <div className={styles.services}>
         {servicesData.map((item) => (
-          <div key={item.title} className={styles.service}>
+          <div key={item.title} className={styles.service} data-aos="fade-up">
             <div className={styles.imgDiv}>
               <img
                 src={process.env.PUBLIC_URL + item.imageUrl}

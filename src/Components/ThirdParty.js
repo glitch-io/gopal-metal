@@ -10,7 +10,7 @@ function ThirdParty() {
         Inspection Agency can be nominated by clients World reputed Agencies
         like SGS,Bureau Veritas, DNV, LLOYDS, ICB and many other.
       </p>
-      <div className={styles.clients}>
+      <div className={styles.clients} data-aos="zoom-in">
         {clientData.map((item) => (
           <div key={item.id}>
             <img

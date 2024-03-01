@@ -6,7 +6,7 @@ function PageFooter() {
   return (
     <footer>
       <div className={styles.footer}>
-        <div className={styles.about}>
+        <div className={styles.about} data-aos="fade-up">
           <h1>About us</h1>
           <p>
             Nepco Impex LLP is one of the leading company amongst the
@@ -21,7 +21,7 @@ function PageFooter() {
           </p>
           <SocialNav />
         </div>
-        <div className={styles.quickLinks}>
+        <div className={styles.quickLinks} data-aos="fade-up">
           <h1>Quick Links</h1>
           <ul>
             <li>
@@ -44,7 +44,7 @@ function PageFooter() {
             </li>
           </ul>
         </div>
-        <div className={styles.quickLinks}>
+        <div className={styles.quickLinks} data-aos="fade-up">
           <h1>Our Products</h1>
           <ul>
             <li>
@@ -67,7 +67,7 @@ function PageFooter() {
             </li>
           </ul>
         </div>
-        <div className={styles.contact}>
+        <div className={styles.contact} data-aos="fade-up">
           <h1> Contact US</h1>
           <p>
             Regd. Office : Shop no. 9 Balaji Nandan, Near Reva Park,Waghodia
