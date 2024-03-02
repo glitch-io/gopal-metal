@@ -6,6 +6,19 @@ const quickLinksData = [
   { link: "/round-bar", name: "Round Bar" },
   { link: "/sheet", name: "Sheet & Plate" },
 ];
+
+const flangeLinksData = [
+  { link: "/weld-neck-flange", name: "Weld Neck Flange" },
+  { link: "/slip-on-flange", name: "Slip-On Flange" },
+  { link: "/blind-flange", name: "Blind Flange" },
+  { link: "/socket-weld-flange", name: "Socket Weld Flange" },
+  { link: "/lap-flange", name: "Lap Flange" },
+  { link: "/plate-flange", name: "Plate Flange" },
+  { link: "/tongue-and-groove", name: "Tongue & Groove" },
+  { link: "/ring-type-joint-flanges", name: "Ring Type Joint Flanges" },
+  { link: "/orifice-flanges", name: "Orifice Flanges" },
+  { link: "/threaded-flanges", name: "Threaded Flange" },
+];
 const featuresItem = [
   {
     id: 1,
@@ -165,4 +178,5 @@ export {
   carouselItems,
   ourData,
   clientData,
+  flangeLinksData,
 };

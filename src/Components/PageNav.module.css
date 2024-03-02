@@ -14,6 +14,7 @@
 .nav.fixed {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  color: #000;
 }
 @keyframes slideDown {
   from {
@@ -35,6 +36,7 @@
 .nav a:visited {
   text-decoration: none;
   color: #000;
+  /* color: #fff; */
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
