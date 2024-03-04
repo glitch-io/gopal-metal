@@ -8,6 +8,7 @@ import PageFooter from "./Components/PageFooter";
 import SpinnerFullPage from "./Components/SpinnerFullPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./Components/ScrollToTop";
+import Cursor from "./Components/Cursor";
 
 const Homepage = lazy(() => import("./Pages/HomePage"));
 const AboutUs = lazy(() => import("./Pages/AboutUs"));
@@ -84,6 +85,7 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <PageFooter />
+          <Cursor />
           <ScrollToTop />
         </Suspense>
       </BrowserRouter>
