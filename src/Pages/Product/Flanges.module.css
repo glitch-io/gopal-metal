@@ -36,4 +36,7 @@
   .flangesSection {
     padding: 70px 20px;
   }
+  .flangeImg {
+    height: 100%;
+  }
 }
