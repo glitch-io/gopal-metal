@@ -1,4 +1,4 @@
-import About from "../Components/About/About";
+import About from "../Components/OurProducts/About/About";
 import Experience from "../Components/Experience";
 import WhoWeAre from "../Components/WhoWeAre";
 import Product from "../Components/OurProducts/Product";

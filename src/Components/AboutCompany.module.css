@@ -36,14 +36,17 @@
 .textDiv .text {
   font-size: 1.7rem;
 }
-@media only screen and (max-width: 500px) {
-  .aboutCompany {
-    padding: 50px 20px;
-  }
+
+@media (max-width: 768px) {
   .imgDiv {
     width: 100%;
   }
   .textDiv {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutCompany {
+    padding: 50px 20px;
   }
 }

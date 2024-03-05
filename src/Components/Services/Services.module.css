@@ -34,12 +34,16 @@
 .service h2:hover {
   color: var(--color-brand--1);
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 768px) {
   .servicesSection {
     width: 100%;
-    padding: 70px 20px;
   }
   .service {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .servicesSection {
+    padding: 70px 20px;
   }
 }

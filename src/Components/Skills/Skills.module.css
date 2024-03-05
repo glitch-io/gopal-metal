@@ -41,15 +41,11 @@
 }
 @media (max-width: 768px) {
   .skill {
-    width: 300px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {
   .skillsSection {
     padding: 70px 20px;
-  }
-
-  .skill {
-    width: 350px;
   }
 }

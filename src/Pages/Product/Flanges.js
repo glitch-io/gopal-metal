@@ -12,7 +12,7 @@ function Flanges() {
         <div className={styles.flangeContent}>
           <div className={styles.flangeImg}>
             <img
-              src={process.env.PUBLIC_URL + "/Imgs/product/flanges.jpg"}
+              src={process.env.PUBLIC_URL + "/Imgs/Product/flanges.jpg"}
               alt={"flanges.jpg"}
             />
           </div>

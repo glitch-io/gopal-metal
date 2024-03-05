@@ -43,7 +43,7 @@
 }
 @media (max-width: 768px) {
   .productSection {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .productContent {
     width: 100%;
