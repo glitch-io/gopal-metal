@@ -83,6 +83,24 @@ const productItems = [
     imageUrl: "/productImg/product6.jpg",
     altText: "sheet-and-plate.jpg",
   },
+  {
+    id: 7,
+    name: "Parallel Flange Beams & Columns",
+    imageUrl: "/productImg/product7.jpg",
+    altText: "parallel-flange-beams-and-columns.jpg",
+  },
+  {
+    id: 8,
+    name: "Plates & Coils",
+    imageUrl: "/productImg/product8.jpg",
+    altText: "plates-and-coil.jpg",
+  },
+  {
+    id: 9,
+    name: "Angles & Channels",
+    imageUrl: "/productImg/product9.jpg",
+    altText: "angles-and-channels.jpg",
+  },
 ];
 
 const servicesData = [
@@ -113,7 +131,7 @@ const skillsData = [
   },
   {
     name: "Third Party Inspection",
-    text: "Our team of experts maintain a vigil on the quality of the products. Every single piece is attached with test certificates and reports. We are continually improving our quality to serve our clients better.",
+    text: "Our team of experts maintain a vigil on the quality of the products. Every single piece is attached with test cerhttp://localhost:3000/#tificates and reports. We are continually improving our quality to serve our clients better.",
   },
   {
     name: "Product Sourcing & Packaging",
