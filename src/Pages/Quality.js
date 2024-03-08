@@ -2,9 +2,18 @@ import React from "react";
 import Banner from "../Components/Banner";
 import QuickLinks from "../Components/QuickLinks";
 import styles from "./Quality.module.css";
+import { Helmet } from "react-helmet-async";
 function Quality() {
   return (
     <>
+      <Helmet>
+        <title>Quality - Nepco Impex LLP</title>
+        <meta
+          name="description"
+          content="We exercise stringent quality control measures for ensuring the accurate dimensions and Mechanical Composition of our products. Our quality assurance system ..."
+        />
+        <link rel="canonical" href="/quality" />
+      </Helmet>
       <Banner title={"Quality"} />
       <div className={styles.qualitySection}>
         <QuickLinks />
