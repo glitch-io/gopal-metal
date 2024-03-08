@@ -3,9 +3,18 @@ import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import styles from "./Product.module.css";
 import Test from "./Test";
+import { Helmet } from "react-helmet-async";
 function ButtweldFittings() {
   return (
     <>
+      <Helmet>
+        <title>Buttweld Fittings</title>
+        <meta
+          name="description"
+          content="Nepco Impex LLP is one of the leading company amongst the manufacturers and exporters of high quality flanges,Pipes and Pipe Fittings, Buttweld, ..."
+        />
+        <link rel="canonical" href="/buttweld-fittings" />
+      </Helmet>
       <Banner title={"Buttweld Fittings"} />
       <div className={styles.productSection}>
         <QuickLinks />

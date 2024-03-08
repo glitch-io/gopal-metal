@@ -3,6 +3,7 @@ import Banner from "../../Components/Banner";
 import QuickLinks from "../../Components/QuickLinks";
 import { Table } from "react-bootstrap";
 import styles from "./Technical.module.css";
+import { Helmet } from "react-helmet-async";
 
 function Chemical() {
   const chemicalData = [
@@ -257,6 +258,14 @@ function Chemical() {
 
   return (
     <>
+      <Helmet>
+        <title>Chemical Composition</title>
+        <meta
+          name="description"
+          content="Nepco Impex LLP is one of the leading company amongst the manufacturers and exporters of high quality flanges,Pipes and Pipe Fittings, Buttweld, ..."
+        />
+        <link rel="canonical" href="/chemical-composition" />
+      </Helmet>
       <Banner title={"Chemical Composition"} />
       <div className={styles.technicalContent}>
         <QuickLinks />

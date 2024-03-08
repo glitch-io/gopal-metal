@@ -2,10 +2,19 @@ import React from "react";
 import styles from "./Flanges.module.css";
 import Banner from "../../Components/Banner";
 import FlangeLink from "../../Components/FlangeLink";
+import { Helmet } from "react-helmet-async";
 
 function Flanges() {
   return (
     <>
+      <Helmet>
+        <title>Flanges</title>
+        <meta
+          name="description"
+          content="Nepco Impex LLP is one of the leading company amongst the manufacturers and exporters of high quality flanges,Pipes and Pipe Fittings, Buttweld, ..."
+        />
+        <link rel="canonical" href="/flanges" />
+      </Helmet>
       <Banner title={"Flanges"} />
       <div className={styles.flangesSection}>
         <FlangeLink />
