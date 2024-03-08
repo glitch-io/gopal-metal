@@ -14,7 +14,6 @@ function Product() {
               alt={item.altText}
             />
             <div className={styles.productText}>
-              <div>{`0${item.id}`}</div>
               <h3>{item.name}</h3>
             </div>
           </div>
