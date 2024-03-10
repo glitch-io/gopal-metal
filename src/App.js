@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -33,6 +34,7 @@ const Threaded = lazy(() => import("./Pages/Flanges/Threaded"));
 const Chemical = lazy(() => import("./Pages/Technical/Chemical"));
 const Mechanical = lazy(() => import("./Pages/Technical/Mechanical"));
 const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
+
 function App() {
   AOS.init({
     // Global settings:
@@ -56,46 +58,54 @@ function App() {
 
   return (
     <>
-      <HelmetProvider>
-        <BrowserRouter>
-          <Suspense fallback={<SpinnerFullPage />}>
-            <PageNav />
-            <Routes>
-              <Route index element={<Homepage />} />
-              <Route path="/about-us" element={<AboutUs />} />
-              <Route path="/quality" element={<Quality />} />
-              <Route path="/contact-us" element={<Contact />} />
-              <Route path="/flanges" element={<Flanges />} />
-              <Route path="/forged-fittings" element={<ForgedFittings />} />
-              <Route path="/buttweld-fittings" element={<ButtweldFittings />} />
-              <Route path="/pipe" element={<Pipes />} />
-              <Route path="/round-bar" element={<RoundBar />} />
-              <Route path="/sheet" element={<Sheet />} />
-              <Route
-                path="/weld-neck-flange"
-                element={<WeldNeckFlange />}
-              />{" "}
-              <Route path="/slip-on-flange" element={<SlipOnFlange />} />
-              <Route path="/blind-flange" element={<BlindFlange />} />{" "}
-              <Route
-                path="/socket-weld-flange"
-                element={<SocketWeldFlange />}
-              />
-              <Route path="/lap-flange" element={<LapFlange />} />
-              <Route path="/plate-flange" element={<PlateFlange />} />{" "}
-              <Route path="/tongue-and-groove" element={<TongueGroove />} />
-              <Route path="/ring-type-joint-flanges" element={<Ring />} />
-              <Route path="/orifice-flanges" element={<Orifice />} />{" "}
-              <Route path="/threaded-flanges" element={<Threaded />} />
-              <Route path="/chemical-composition" element={<Chemical />} />
-              <Route path="/mechanical-composition" element={<Mechanical />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-            <PageFooter />
-            <ScrollToTop />
-          </Suspense>
-        </BrowserRouter>
-      </HelmetProvider>
+      <SpeedInsights>
+        <HelmetProvider>
+          <BrowserRouter>
+            <Suspense fallback={<SpinnerFullPage />}>
+              <PageNav />
+              <Routes>
+                <Route index element={<Homepage />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/quality" element={<Quality />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/flanges" element={<Flanges />} />
+                <Route path="/forged-fittings" element={<ForgedFittings />} />
+                <Route
+                  path="/buttweld-fittings"
+                  element={<ButtweldFittings />}
+                />
+                <Route path="/pipe" element={<Pipes />} />
+                <Route path="/round-bar" element={<RoundBar />} />
+                <Route path="/sheet" element={<Sheet />} />
+                <Route
+                  path="/weld-neck-flange"
+                  element={<WeldNeckFlange />}
+                />{" "}
+                <Route path="/slip-on-flange" element={<SlipOnFlange />} />
+                <Route path="/blind-flange" element={<BlindFlange />} />{" "}
+                <Route
+                  path="/socket-weld-flange"
+                  element={<SocketWeldFlange />}
+                />
+                <Route path="/lap-flange" element={<LapFlange />} />
+                <Route path="/plate-flange" element={<PlateFlange />} />{" "}
+                <Route path="/tongue-and-groove" element={<TongueGroove />} />
+                <Route path="/ring-type-joint-flanges" element={<Ring />} />
+                <Route path="/orifice-flanges" element={<Orifice />} />{" "}
+                <Route path="/threaded-flanges" element={<Threaded />} />
+                <Route path="/chemical-composition" element={<Chemical />} />
+                <Route
+                  path="/mechanical-composition"
+                  element={<Mechanical />}
+                />
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+              <PageFooter />
+              <ScrollToTop />
+            </Suspense>
+          </BrowserRouter>
+        </HelmetProvider>
+      </SpeedInsights>
     </>
   );
 }
