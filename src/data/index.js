@@ -104,12 +104,18 @@ const productItems = [
 ];
 
 const servicesData = [
-  { title: "", imageUrl: "ServiceImg/service1.jpg" },
-  { title: "Chemical Industry", imageUrl: "ServiceImg/service2.jpg" },
-  { title: "Oil & Gas", imageUrl: "ServiceImg/service3.jpg" },
-  { title: "Power Plant", imageUrl: "ServiceImg/service4.jpg" },
-  { title: "Cement Industry", imageUrl: "ServiceImg/service5.jpg" },
-  { title: "Marine Industry", imageUrl: "ServiceImg/service6.jpg" },
+  { title: "Textile Industries", imageUrl: "ServiceImg/service1.jpg" },
+  { title: "Automobile Industries", imageUrl: "ServiceImg/service2.jpg" },
+  { title: "Acid & Chemical Industries", imageUrl: "ServiceImg/service3.jpg" },
+  { title: "Paper & Pulp Industries", imageUrl: "ServiceImg/service4.jpg" },
+  { title: "Oil & Gas Industries", imageUrl: "ServiceImg/service5.jpg" },
+  { title: "Pharmaceuticals", imageUrl: "ServiceImg/service6.jpg" },
+  { title: "Beverage Industries", imageUrl: "ServiceImg/service7.jpg" },
+  { title: "Sugar Industries", imageUrl: "ServiceImg/service8.jpg" },
+  { title: "Refineries", imageUrl: "ServiceImg/service9.jpg" },
+  { title: "Fertilizer Industries", imageUrl: "ServiceImg/service10.jpg" },
+  { title: "Steel Industries", imageUrl: "ServiceImg/service11.jpg" },
+  { title: "Power Industries", imageUrl: "ServiceImg/service12.jpg" },
 ];
 
 const skillsData = [
