@@ -104,7 +104,7 @@ const productItems = [
 ];
 
 const servicesData = [
-  { title: "Aerospace Industry", imageUrl: "ServiceImg/service1.jpg" },
+  { title: "", imageUrl: "ServiceImg/service1.jpg" },
   { title: "Chemical Industry", imageUrl: "ServiceImg/service2.jpg" },
   { title: "Oil & Gas", imageUrl: "ServiceImg/service3.jpg" },
   { title: "Power Plant", imageUrl: "ServiceImg/service4.jpg" },
@@ -148,20 +148,20 @@ const carouselItems = [
 const ourData = [
   {
     title: "EXPORTER",
-    text: "We are the reputed exporter that gracefully handle both domestic and foreign markets. Goodwill amongst our clients is our biggest asset and distinctive approach adds value to it.",
+    text: "We excel as exporters, adeptly managing both domestic and foreign markets. Our esteemed reputation is built on the trust and goodwill of our clients, our most valuable asset. Through our unique approach, we continually add value to these relationships, distinguishing ourselves in the industry.",
   },
   {
     title: "SUPPLIER",
-    text: "Prime quality of supply is not an event of chance it is a conscious effort to work efficiently to deliver material that fully satisfy our client needs for quality materials which is our motto, with total conformation to high standard of metal.",
+    text: "Ensuring prime quality in our supply isn't left to chance; it's a deliberate commitment to efficient work processes aimed at satisfying our clients' needs for superior materials. Upholding our motto, we adhere strictly to high standards of metal, guaranteeing total satisfaction for our customers.",
   },
-  {
+  /*{
     title: "STOCKIST",
     text: "We have a largest piping products inventory, used to serve both national and international demands. Our warehouse is a boon for those who require instant supply of our products.",
   },
   {
     title: "DISTRIBUTOR",
     text: "We find absolute pleasure in delivering perfection through our work. We are the professional global distributor of fine quality metal products.",
-  },
+  },*/
 ];
 
 const clientData = [
