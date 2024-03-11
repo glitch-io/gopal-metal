@@ -9,15 +9,14 @@ function PageFooter() {
         <div className={styles.about} data-aos="fade-up">
           <h1>About us</h1>
           <p>
-            Nepco Impex LLP is one of the leading company amongst the
-            manufacturers and exporters of high quality flanges,Pipes and Pipe
-            Fittings, Buttweld, Fasteners&sheets in Alloy steel, carbon steel,
-            stainless steel, nickel alloys. Through regular and consistent
-            supply of our products at industry leading prices, we have
-            established ourselves a reliable player in the industry. We have the
-            capability and expertise to design these products in different metal
-            alloys and in a variety of specifications to fulfill the various
-            requirements of our clients.
+            Nepco Impex LLP stands as a prominent figure in the manufacturing
+            and export of top-notch flanges, pipes, pipe fittings, buttweld,
+            fasteners, and sheets. Our extensive range encompasses alloy steel,
+            carbon steel, stainless steel, and nickel alloys. With a steadfast
+            commitment to consistency and quality, we have earned a reputation
+            as a trusted supplier in the industry. Our adeptness in crafting
+            products across different metal alloys and specifications
+            underscores our ability to meet diverse client needs effectively.
           </p>
           <SocialNav />
         </div>
@@ -31,13 +30,13 @@ function PageFooter() {
               <Link to="/about-us">About</Link>
             </li>
             <li>
-              <Link to="/product">Product</Link>
+              <Link to="/flanges">Product</Link>
             </li>
             <li>
               <Link to="/quality">Quality</Link>
             </li>
             <li>
-              <Link to="/technical-info">Technical Info</Link>
+              <Link to="/chemical-composition">Technical Info</Link>
             </li>
             <li>
               <Link to="/contact-us">Contact</Link>
@@ -70,13 +69,11 @@ function PageFooter() {
         <div className={styles.contact} data-aos="fade-up">
           <h1> Contact US</h1>
           <p>
-            Regd. Office : Shop no. 9 Balaji Nandan, Near Reva Park,Waghodia
-            Road, Vadodara - 390025
+            Corporate Office : GF-1, Jaya Building, 2nd Carpenter Street, C.P
+            Tank,Mumbai - 400004. (MH) India
           </p>
-          <p>Manufacturing Unit :</p>
-          <p>Telephone : +91 79908 51289</p>
-          <p>Phone: +91 79908 51289/+91 91042 26436</p>
-          <p>Mail : nepcoimpexllp@gmail.com</p>
+          <p>Phone: +91 80562 03904</p>
+          <p>Mail : sales@nepcoimpexllp.in</p>
         </div>
       </div>
       <center>

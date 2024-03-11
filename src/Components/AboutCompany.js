@@ -53,12 +53,24 @@ function AboutCompany() {
             product quality and transparent dealings. Specialties that make us a
             profitable business partner for our clients are:
             <br />
-            <br />* Cost-effective rates <br /> * Customized solution <br />*
-            Customized packaging <br />* Customer focused approach <br />* Easy
-            payment modes <br /> * Good Financial Position & TQM <br /> *
-            Superior quality products <br />* Timely delivery schedule <br /> *
-            Timely delivery of products <br /> * Experience and specialty in
-            work
+            <br />
+            -Competitive rates
+            <br />
+            -Tailored solutions
+            <br />
+            -Customized packaging
+            <br />
+            -Customer-centric approach
+            <br />
+            -Convenient payment options
+            <br />
+            -Strong financial position & Total Quality Management (TQM)
+            <br />
+            -Superior product quality
+            <br />
+            -Timely delivery schedule
+            <br />
+            -Extensive experience and expertise
           </p>
         </div>
       </div>

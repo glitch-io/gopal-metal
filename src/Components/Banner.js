@@ -7,7 +7,7 @@ function Banner({ title }) {
       <div
         className={styles.banner}
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/Imgs/banner.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/Imgs/img1.jpg)`,
         }}
       >
         <h1>{title}</h1>

@@ -120,28 +120,28 @@ const servicesData = [
 
 const skillsData = [
   {
-    name: "Largest Inventory",
-    text: "We help customers develop their energy resources;bringing world class capability and delivering it domestically and globally",
+    name: "Professional Service",
+    text: "We are committed to delivering top-tier professional services to diverse industries worldwide. Our unwavering dedication ensures excellence in every aspect of our operations, fostering trust and reliability among our global clientele.",
   },
   {
-    name: "Quality Assurance",
-    text: "The quality assurance system is guided by principles that support our unique working culture which incorporates respect. We ensure that finest quality material is used for our products.",
+    name: "Experienced",
+    text: "We're a growing business, thriving amidst significant expansion. Our relentless pursuit of excellence and innovation fuels our dynamic strategies, propelling us forward and solidifying our position as industry leaders.",
   },
   {
-    name: "Quick Delivery",
-    text: "Whether big or small, we respect all our clients and every care is taken to give them a pleasant and hassle-free business experience. We deliver our orders in bulk as well as economic order quantities and as a rule. We believe to give the delivery of goods within the time assigned by us and as per the customer’s requirement",
+    name: "On Time Delivery",
+    text: "Our top priority is ensuring on-time service delivery and customer satisfaction. We are committed to meeting deadlines and exceeding expectations, consistently striving to provide exceptional experiences for our valued clients.",
   },
   {
-    name: "Customer Support",
-    text: "Build strong relationships with our customers – which we achieve, for example, by employing and training local workforces.",
+    name: "Public Projects",
+    text: "We adapt our relationships across diverse industry sectors with progress and dynamism. Embracing change, we evolve our approach to effectively meet the unique needs and challenges of each industry we serve.",
   },
   {
-    name: "Third Party Inspection",
-    text: "Our team of experts maintain a vigil on the quality of the products. Every single piece is attached with test cerhttp://localhost:3000/#tificates and reports. We are continually improving our quality to serve our clients better.",
+    name: "Superior Quality",
+    text: "Expect nothing less than top-quality services from us. With our commitment to excellence, we deliver exceptional solutions tailored to meet your needs, ensuring satisfaction and success in every interaction.",
   },
   {
-    name: "Product Sourcing & Packaging",
-    text: "We have many years of experience of product sourcing domestically and globally and also Packaging also plays a key role in export success as it helps in the safe keep of products, retaining them in perfect condition until reaching the destination and also uniquely positioning and differentiating them.",
+    name: "Competitive Pricing",
+    text: "We give our administration at the best market value, which is financially savvy to a wide range of ventures.",
   },
 ];
 
