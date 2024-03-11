@@ -14,17 +14,22 @@ function About() {
           Welcome to <span>Nepco Impex LLP</span>
         </h1>
         <p>
-          Nepco Impex LLP is one of the leading company amongst the
-          manufacturers and exporters of high quality flanges,Pipes and Pipe
-          Fittings, Buttweld, Fasteners&sheets in Alloy steel, carbon steel,
-          stainless steel, nickel alloys etc.Through regular and consistent
-          supply of our products at industry leading prices, we have established
-          ourselves a reliable player in the industry. We have the capability
-          and expertise to design these products in different metal alloys and
-          in a variety of specifications to fulfill the various requirements of
-          our clients. Evolving ourselves with time, we have secured a special
-          place for ourselves within the industry as well as among our clients
-          in the domestic as well as international markets
+          Nepco Impex LLP stands tall as a premier manufacturer and exporter,
+          specializing in top-notch flanges, pipes, pipe fittings, buttweld,
+          fasteners, and sheets. Our range encompasses a variety of materials
+          including alloy steel, carbon steel, stainless steel, and nickel
+          alloys, ensuring we cater to diverse industrial needs.
+          <br />
+          With a commitment to consistency and reliability, we offer our
+          products at competitive prices, earning us a solid reputation in the
+          industry. Our strength lies in our ability to customize products
+          according to client specifications, utilizing various metal alloys to
+          meet their unique requirements.
+          <br />
+          Adapting to the evolving market demands, we have carved a niche for
+          ourselves both domestically and internationally. Our dedication to
+          quality and customer satisfaction has earned us trust and loyalty from
+          clients worldwide.
         </p>
         <Link to="/about-us">
           More About <ArrowRight />

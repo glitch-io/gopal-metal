@@ -26,7 +26,7 @@ const featuresItem = [
     altText: ".jpg",
     title: "About Us",
     subTitle:
-      "Nepco Impex LLP is one of the leading manufacturer ,exporter,supplier and extensive stockholder of piping products for oil, gas,refineries, petrochemical and nuclear industries",
+      "Nepco Impex LLP proudly stands as a premier manufacturer, exporter, and supplier, boasting an extensive inventory of piping products tailored for the oil, gas, refinery, petrochemical, and nuclear sectors. As a trusted stockholder, we provide a comprehensive range of piping solutions to meet the demanding needs of these industries.",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const featuresItem = [
     altText: ".jpg",
     title: "Vision & Mission",
     subTitle:
-      "To become an enterprising organisation in the field of Ferrous & Non ferrous products. To be known more for our quality of products and excellent service. Maintaining an uncompromising attitude towards quality of our products, service back-up.",
+      "At Nepco Impex LLP, we aim to be a leader in Ferrous & Non-ferrous products. We're committed to delivering superior quality and unmatched service. With unwavering dedication to excellence, we uphold rigorous standards for our products and customer support",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const featuresItem = [
     altText: ".jpg",
     title: "Quality Policy",
     subTitle:
-      "Quality is our prime concern. We are able to maintain high quality standards through our committed personnel and sound infrastructure.",
+      "Quality is paramount to us. We maintain high standards through our dedicated team and strong infrastructure. Our committed personnel ensure excellence in all operations, supported by a robust infrastructure.",
   },
 ];
 const productItems = [
