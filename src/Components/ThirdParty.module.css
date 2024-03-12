@@ -5,31 +5,65 @@
   background-color: var(--color-dark--1);
 }
 
-.thirdParty h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.thirdParty p {
-  text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
-}
-
 .clients {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--color-light--1);
-  padding: 20px;
+  padding: 20px 100px;
   border-radius: 6px;
+}
+
+.container {
+  display: flex;
   gap: 2rem;
+  align-items: flex-end;
+  width: 30%;
+}
+.container img {
+  height: 80px;
+}
+
+.textField h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: var(--color-dark--1);
+}
+.textField p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: var(--color-dark--1);
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding: 20px 50px;
+    gap: 2rem;
+  }
+  .container {
+    width: 47%;
+  }
 }
 @media only screen and (max-width: 500px) {
+  .clients {
+    padding: 20px 40px;
+    gap: 2rem;
+  }
   .thirdParty {
     width: 100%;
     padding: 70px 20px;
+  }
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .textField h1 {
+    font-size: 2.5rem;
+  }
+  .textField p {
+    font-size: 1.5rem;
   }
 }

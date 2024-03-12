@@ -4,19 +4,17 @@ import { clientData } from "../data";
 function ThirdParty() {
   return (
     <div className={styles.thirdParty}>
-      <h1>Third Party Inspection</h1>
-      <p>
-        Nepco Impex LLP offer its Products with Third Party Inspection also. The
-        Inspection Agency can be nominated by clients World reputed Agencies
-        like SGS,Bureau Veritas, DNV, LLOYDS, ICB and many other.
-      </p>
       <div className={styles.clients} data-aos="zoom-in">
         {clientData.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className={styles.container}>
             <img
-              src={process.env.PUBLIC_URL + item.imgUrl}
-              alt={"clientImage.jpg"}
+              src={process.env.PUBLIC_URL + `${item.imgUrl}`}
+              alt={item.name}
             />
+            <div className={styles.textField}>
+              <h1>{item.text}</h1>
+              <p>{item.name}</p>
+            </div>
           </div>
         ))}
       </div>

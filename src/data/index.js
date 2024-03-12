@@ -167,29 +167,27 @@ const ourData = [
   {
     title: "DISTRIBUTOR",
     text: "We find absolute pleasure in delivering perfection through our work. We are the professional global distributor of fine quality metal products.",
-  },*/
+  }*/
 ];
 
 const clientData = [
   {
     id: 1,
-    imgUrl: "/ThirdParty/client_1.jpg",
+    name: "Experience",
+    text: "30+ Years",
+    imgUrl: "/ThirdParty/img1.png",
   },
   {
     id: 2,
-    imgUrl: "/ThirdParty/client_2.jpg",
+    name: "Production",
+    text: "120000+",
+    imgUrl: "/ThirdParty/img2.png",
   },
   {
     id: 3,
-    imgUrl: "/ThirdParty/client_3.jpg",
-  },
-  {
-    id: 4,
-    imgUrl: "/ThirdParty/client_4.jpg",
-  },
-  {
-    id: 5,
-    imgUrl: "/ThirdParty/client_5.jpg",
+    name: "Happy Clients",
+    text: "50000+",
+    imgUrl: "/ThirdParty/img3.png",
   },
 ];
 

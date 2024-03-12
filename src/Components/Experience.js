@@ -11,7 +11,7 @@ function Experience() {
       <div className={styles.experience}>
         <h1>
           We offer best <span>industrial services.</span>
-          <br /> 25+ years of experience
+          <br /> 30+ years of experience
         </h1>
         <p>Manufacturing Flanges & Pipe Fittings</p>
       </div>
