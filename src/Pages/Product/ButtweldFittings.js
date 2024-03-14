@@ -58,7 +58,7 @@ function ButtweldFittings() {
                 neck stub-ends
                 <br />
                 <br />
-                <strong>Available Grade:</strong> 303, 304, 304L, 316, 316L,
+                <strong>Available Grade:</strong> 202, 304, 304L, 316, 316L,
                 316Ti, 310, 310S, 321, 317L, 347, 347H, 904L, 17 4PH, 15 5PH,
                 410, 420,
               </p>
